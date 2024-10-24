@@ -13,7 +13,7 @@ Esta solución busca mejorar la eficiencia operativa de la concesionaria, facili
 ## Tecnologías Utilizadas
 - **Frontend**: HTML, CSS, Bootstrap
 - **Backend**: Python, Django, Django REST Framework
-- **Base de Datos**: PostgreSQL
+- **Base de Datos**: MySQL
 - **Control de Versiones**: Git
 
 ## Instalación
@@ -48,7 +48,7 @@ Esta solución busca mejorar la eficiencia operativa de la concesionaria, facili
 
 4. **Clona este repositorio en tu máquina local usando el siguiente comando:**
    ```bash
-   git clone git@github.com:emanuel079/proyect_django.git
+   https://github.com/cinrojo/consesionaria_api_v1.git
    ```
 
 5. **Navega hasta el directorio del proyecto:**
@@ -132,7 +132,7 @@ Para acceder como administrador, utiliza las siguientes credenciales:
 - **Usuario**: `superuser`
 - **Contraseña**: `1234`
 
-## Autores ✒️
+## Autores ✒️a
 - Franco Emanuel Benitez - [@emanuel079](https://github.com/emanuel079)
 - Cintia Gisele Rojo - [@cinrojo](https://github.com/cinrojo)
 - Lautaro Palacios - [@Lautaro-Palacios](https://github.com/Lautaro-Palacios)
