@@ -91,9 +91,17 @@ Esta solución busca mejorar la eficiencia operativa de la concesionaria, facili
 
 ### Cliente
 - **GET** `/api_v1/clientes/`: Lista todos los clientes.
-- **POST** `/api_v1/clientes/`: Crea un nuevo cliente.
+- **POST** `/api_v1/clientes/{user_id}/crear-cliente/`: Crea un nuevo cliente.
+- {
+    "telefono": "",
+    "direccion": ""
+}
 - **GET** `/api_v1/clientes/{pk}/`: Obtiene detalles de un cliente específico.
 - **PUT** `/api_v1/clientes/{pk}/`: Actualiza un cliente existente.
+- {
+    "telefono": "",
+    "direccion": ""
+}
 - **DELETE** `/api_v1/clientes/{pk}/`: Elimina un cliente específico.
 - **GET** `/api_v1/clientes/{user_id}/crear-cliente/`: Muestra detalles del usuario antes de crear un cliente.
 - **POST** `/api_v1/clientes/{user_id}/crear-cliente/`: Crea un cliente para un usuario específico.
@@ -101,8 +109,14 @@ Esta solución busca mejorar la eficiencia operativa de la concesionaria, facili
 ### Marca
 - **GET** `/api_v1/marcas/`: Lista todas las marcas.
 - **POST** `/api_v1/marcas/`: Crea una nueva marca.
+- {
+    "nombre": ""
+}
 - **GET** `/api_v1/marcas/{pk}/`: Obtiene detalles de una marca específica.
 - **PUT** `/api_v1/marcas/{pk}/`: Actualiza una marca existente.
+- {
+    "nombre": ""
+}
 - **DELETE** `/api_v1/marcas/{pk}/`: Elimina una marca específica.
 - **GET** `/api_v1/marcas/download-csv/`: Descarga un CSV con todas las marcas.
 - **GET** `/api_v1/marcas/latest/`: Obtiene la última marca agregada.
@@ -110,15 +124,53 @@ Esta solución busca mejorar la eficiencia operativa de la concesionaria, facili
 ### Usuario
 - **GET** `/api_v1/usuarios/`: Lista todos los usuarios.
 - **POST** `/api_v1/usuarios/`: Crea un nuevo usuario.
+- {
+    "username": "",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_active": false
+}
 - **GET** `/api_v1/usuarios/{pk}/`: Obtiene detalles de un usuario específico.
 - **PUT** `/api_v1/usuarios/{pk}/`: Actualiza un usuario existente.
+- {
+    "username": "",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_active": false
+}
 - **DELETE** `/api_v1/usuarios/{pk}/`: Elimina un usuario específico.
 
 ### Auto
 - **GET** `/api_v1/cars/`: Lista todos los autos.
 - **POST** `/api_v1/cars/`: Crea un nuevo auto.
+- {
+    "categoria": {
+        "nombre": ""
+    },
+    "precio": null,
+    "imagen": null,
+    "pais_fabricacion": "",
+    "combustible": "",
+    "descripcion": "",
+    "active": false,
+    "modelo": null
+}
 - **GET** `/api_v1/cars/{pk}/`: Obtiene detalles de un auto específico.
 - **PUT** `/api_v1/cars/{pk}/`: Actualiza un auto existente.
+- {
+    "categoria": {
+        "nombre": ""
+    },
+    "precio": null,
+    "imagen": null,
+    "pais_fabricacion": "",
+    "combustible": "",
+    "descripcion": "",
+    "active": false,
+    "modelo": null
+}
 - **DELETE** `/api_v1/cars/{pk}/`: Elimina un auto específico.
 - **GET** `/api_v1/cars/{pk}/comentarios/`: Obtiene comentarios asociados a un auto.
 - **DELETE** `/api_v1/cars/{pk}/comentarios/{comentario_id}/`: Elimina un comentario específico asociado a un auto.
@@ -132,7 +184,7 @@ Para acceder como administrador, utiliza las siguientes credenciales:
 - **Usuario**: `superuser`
 - **Contraseña**: `1234`
 
-## Autores ✒️a
+## Autores ✒️
 - Franco Emanuel Benitez - [@emanuel079](https://github.com/emanuel079)
 - Cintia Gisele Rojo - [@cinrojo](https://github.com/cinrojo)
 - Lautaro Palacios - [@Lautaro-Palacios](https://github.com/Lautaro-Palacios)
